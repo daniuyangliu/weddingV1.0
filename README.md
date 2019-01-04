@@ -1,8 +1,8 @@
-# wedding
+# wedding release 分支
 婚庆大屏和微信端互动，关注个人微信公众号发送消息，再大屏通过弹幕的形式展示你发送的消息，并且可以通过发送弹幕的形式参与抽奖
 
 ## 项目架构
-本项目架构springboot 持久采用mybatis 
+本项目架构springboot 持久采用mybatis  
 
 ## 项目配置:
 maven:3.3.9 tomcat:8.5  jdk:1.8 项目clone推荐采用IDEA

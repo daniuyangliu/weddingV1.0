@@ -218,60 +218,57 @@
             <h2>登录</h2>
 
 
-            <div id="signOnCreds">
-                <form  name="signon" id="signon"
-                      action="/form" method="post">
-                    <input type="hidden" id="clientOffset" name="clientOffset" value="8">
-                    <input type="hidden" id="fk" name="fk"
-                           value="4206718_87f11f60d0cd4d95be0c763ad6d33d00560d67fdb522d44496a596a5ea588a2d">
-                    <ul class="credsList">
-                        <li>
-                            <div class="cb41w2">
-                                <label for="userid" class="">用户名</label>
-                                <input type="text" id="userid" name="username" tabindex="1" maxlength="80"
-                                       class="textInput" title="输入用户名" value="" autocomplete="off">
-                                <span class="cb41w5">
+            <form action="/form" method="post">
+                <input type="hidden" id="clientOffset" name="clientOffset" value="8">
+                <input type="hidden" id="fk" name="fk"
+                       value="4206718_87f11f60d0cd4d95be0c763ad6d33d00560d67fdb522d44496a596a5ea588a2d">
+                <ul class="credsList">
+                    <li>
+                        <div class="cb41w2">
+                            <label for="userid" class="">用户名</label>
+                            <input type="text" id="userid" name="username" tabindex="1" maxlength="80"
+                                   class="textInput" title="输入用户名" value="" autocomplete="off">
+                            <span class="cb41w5">
 							<span class="cb41w6">
-								<%--<span role="tooltip" class="cb41noteshoverbtn" tabindex="4" title="忘记用户名？"><span
+                                <%--<span role="tooltip" class="cb41noteshoverbtn" tabindex="4" title="忘记用户名？"><span
                                         class="cb41notescontent"><span class="cb41arrow"></span>用户名通常是您的电子邮件地址。<a
                                         href="https://profile.oracle.com/myprofile/account/forgot-username.jspx"
                                         tabindex="5" target="_blank">忘记用户名？</a></span></span>
-							</span>--%>
-						</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cb41w3">
-                                <label for="pass">密码</label>
-                                <input type="password" id="pass" name="password" tabindex="2" maxlength="255"
-                                       class="textInput" title="输入密码" value="" autocomplete="off">
-                                <span class="cb41w5">
-							      <span class="cb41w6">
-								   <%-- <span role="tooltip" class="cb41noteshoverbtn" tabindex="6" title="忘记密码？"><span
-                                            class="cb41notescontent"><span class="cb41arrow"></span><a
-                                            href="https://profile.oracle.com/myprofile/account/forgot-password.jspx"
-                                            tabindex="7" target="_blank">忘记密码？</a></span></span>
-							      </span>--%>
-						        </span>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="cb41w7">
-            <span id="required" class="error-hide">
-                <div class="cb41error">
-                    请输入您的用户名和密码
-                </div>
-            </span>
-
-                    </div>
-                    <li>
-                        <div class="cb41w4">
-                           <%-- <span><input type="submit" id="signin_button" class="signin_button" tabindex="3" value="登录"></span>--%>
-                            <span><input type="submit"  value="登录"></span>
+                            </span>--%>
+                            </span>
                         </div>
                     </li>
-                </form>
-            </div>
+                    <li>
+                        <div class="cb41w3">
+                            <label for="pass">密码</label>
+                            <input type="password" id="pass" name="password" tabindex="2" maxlength="255"
+                                   class="textInput" title="输入密码" value="" autocomplete="off">
+                            <span class="cb41w5">
+							      <span class="cb41w6">
+                                      <%-- <span role="tooltip" class="cb41noteshoverbtn" tabindex="6" title="忘记密码？"><span
+                                               class="cb41notescontent"><span class="cb41arrow"></span><a
+                                               href="https://profile.oracle.com/myprofile/account/forgot-password.jspx"
+                                               tabindex="7" target="_blank">忘记密码？</a></span></span>
+                                     </span>--%>
+                                  </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cb41w7">
+                    <%-- <span id="required" class="error-hide">
+                         <div class="cb41error">
+                             请输入您的用户名和密码
+                         </div>
+                     </span>--%>
+
+                </div>
+                <li>
+                    <div class="cb41w4">
+                        <%-- <span><input type="submit" id="signin_button" class="signin_button" tabindex="3" value="登录"></span>--%>
+                        <input type="submit"  value="登录">
+                    </div>
+                </li>
+            </form>
         </div>
 
 

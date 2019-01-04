@@ -19,14 +19,13 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
         http.authorizeRequests()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().loginPage("/login")
                 .loginProcessingUrl("/form")
+                .failureUrl("/error")
                 .defaultSuccessUrl("/wedding.jsp")
-                .failureUrl("/login")
                 //成功后跳转。。。
                 .permitAll()
                 .and()
@@ -36,10 +35,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
     @Override
-    public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers(new String[]{"/oracle/**","login"});
-
-        //可以仿照上面一句忽略静态资源
+    public void configure(WebSecurity web) {
+        web.ignoring().antMatchers("/oracle/**");
     }
 
 
